@@ -1,105 +1,199 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>一禾整合有限公司</title>
-  <script src="https://"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宙樺企業有限公司</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 70px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
 
-  <!-- 導覽列 -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-blue-600">一禾整合有限公司</h1>
-      <nav class="space-x-4">
-        <a href="#services" class="hover:text-blue-600">服務</a>
-        <a href="#products" class="hover:text-blue-600">產品</a>
-        <a href="#contact" class="hover:text-blue-600">聯絡我們</a>
-      </nav>
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">宙樺企業有限公司</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">服務</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">產品</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <!-- 首頁橫幅 -->
-  <section class="bg-blue-600 text-white py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4">專業資訊處理與設備供應</h2>
-    <p class="text-lg">資料處理｜排版打字｜電腦與通訊設備銷售｜電子資訊服務</p>
-  </section>
+<!-- 首頁橫幅 -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="display-5">打造永續與效率兼具的現代服務企業</h1>
+    <p class="lead">清潔環保・居家用品・無店面零售・顧問諮詢</p>
+  </div>
+</section>
 
-  <!-- 服務區塊 -->
-  <section id="services" class="py-16 container mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10">我們的服務</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <h4 class="text-xl font-semibold mb-2">資料處理</h4>
-        <p>快速可靠的資料整理、轉換與分析。</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <h4 class="text-xl font-semibold mb-2">排版與打字</h4>
-        <p>專業文件輸入、排版、OCR 整合服務。</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <h4 class="text-xl font-semibold mb-2">電子資訊供應</h4>
-        <p>雲端與IT整合方案，穩定支援營運。</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <h4 class="text-xl font-semibold mb-2">電腦通訊銷售</h4>
-        <p>提供各類電腦與通訊設備，企業批發。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 產品區塊 -->
-  <section id="products" class="py-16 bg-gray-200">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-10">熱門產品</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow p-4 text-center">
-          <img src="https://via.placeholder.com/200" alt="產品圖" class="mx-auto mb-4">
-          <h4 class="text-lg font-semibold">筆記型電腦 A1</h4>
-          <p>高效能，適用商務與數據分析。</p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-4 text-center">
-          <img src="https://via.placeholder.com/200" alt="產品圖" class="mx-auto mb-4">
-          <h4 class="text-lg font-semibold">商用路由器 X5</h4>
-          <p>企業等級網路連線穩定、快速。</p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-4 text-center">
-          <img src="https://via.placeholder.com/200" alt="產品圖" class="mx-auto mb-4">
-          <h4 class="text-lg font-semibold">備份儲存伺服器</h4>
-          <p>安全雲端備份與資料同步。</p>
+<!-- 服務項目 -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">我們的服務</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">清潔環保</h5>
+            <p class="card-text">專業清潔方案、友善環境產品。</p>
+          </div>
         </div>
       </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">居家用品供應</h5>
+            <p class="card-text">生活用品、收納與空間優化。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">無店面零售</h5>
+            <p class="card-text">彈性電商模式，跨平台整合銷售。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">顧問諮詢</h5>
+            <p class="card-text">環境優化、營運升級與品牌規劃。</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 聯絡表單 -->
-  <section id="contact" class="py-16 container mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10">聯絡我們</h3>
-    <form class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-4">
-      <div>
-        <label class="block font-medium">姓名</label>
-        <input type="text" class="w-full border p-2 rounded" required />
+<!-- 產品展示 -->
+<section id="products" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">熱銷產品</h2>
+    <div class="row" id="product-list"></div>
+    <nav class="mt-4">
+      <ul class="pagination justify-content-center" id="pagination"></ul>
+    </nav>
+  </div>
+</section>
+
+<!-- 聯絡我們 -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">聯絡我們</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label class="form-label">姓名</label>
+        <input type="text" class="form-control" required>
       </div>
-      <div>
-        <label class="block font-medium">Email</label>
-        <input type="email" class="w-full border p-2 rounded" required />
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" required>
       </div>
-      <div>
-        <label class="block font-medium">訊息</label>
-        <textarea class="w-full border p-2 rounded h-32" required></textarea>
+      <div class="mb-3">
+        <label class="form-label">訊息</label>
+        <textarea class="form-control" rows="4" required></textarea>
       </div>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">送出</button>
+      <button type="submit" class="btn btn-success">送出</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <!-- 頁尾 -->
-  <footer class="bg-gray-800 text-white text-center p-6 mt-10">
-    &copy; 一禾整合有限公司©2025 版權所有。
-    <div>
-        <p>統一編號60739490<p>
-      </div>
-  </footer>
+<!-- 頁尾 -->
+<footer class="text-center py-4">
+  <div>&copy; 2025 宙樺企業有限公司 | 統一編號：60739800</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const products = [
+    { title: "天然清潔劑", img: "https://cdn.pixabay.com/photo/2017/03/01/08/55/cleaning-2108745_1280.jpg", desc: "環保成分，無刺激性。" },
+    { title: "竹製餐具組", img: "https://cdn.pixabay.com/photo/2020/01/28/06/10/bamboo-4800381_1280.jpg", desc: "可重複使用的環保用品。" },
+    { title: "極簡風收納盒", img: "https://cdn.pixabay.com/photo/2018/03/25/22/48/box-3258792_1280.jpg", desc: "簡潔設計，實用美觀。" },
+    { title: "天然棉織抹布", img: "https://cdn.pixabay.com/photo/2021/06/06/09/41/duster-6315451_1280.jpg", desc: "吸水力強，天然材質。" },
+    { title: "居家香氛蠟燭", img: "https://cdn.pixabay.com/photo/2018/11/06/22/39/aroma-3808290_1280.jpg", desc: "放鬆情緒，淨化空間。" },
+    { title: "手工洗碗皂", img: "https://cdn.pixabay.com/photo/2021/07/13/17/49/soap-6463757_1280.jpg", desc: "溫和去污，無化學添加。" }
+  ];
+
+  const perPage = 3;
+  let currentPage = 1;
+
+  function renderProducts() {
+    const start = (currentPage - 1) * perPage;
+    const end = start + perPage;
+    const currentItems = products.slice(start, end);
+
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = "";
+
+    currentItems.forEach(p => {
+      productList.innerHTML += `
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="${p.img}" class="card-img-top" alt="${p.title}">
+            <div class="card-body">
+              <h5 class="card-title">${p.title}</h5>
+              <p class="card-text">${p.desc}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  function renderPagination() {
+    const totalPages = Math.ceil(products.length / perPage);
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+      pagination.innerHTML += `
+        <li class="page-item ${i === currentPage ? 'active' : ''}">
+          <a class="page-link" href="#" onclick="gotoPage(${i})">${i}</a>
+        </li>
+      `;
+    }
+  }
+
+  function gotoPage(page) {
+    currentPage = page;
+    renderProducts();
+    renderPagination();
+  }
+
+  // 初始化
+  renderProducts();
+  renderPagination();
+</script>
 
 </body>
 </html>
